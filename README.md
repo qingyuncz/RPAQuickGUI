@@ -1,35 +1,35 @@
-# Script Launcher UI
+# ZippyComponentUI - 脚本启动器UI
 
-A simple PyQt6 based UI for script configuration and launching.
+一个基于PyQt6的简单UI，用于脚本配置和启动。
 
-## Installation
+## 安装
 
 ```bash
 pip install script-launcher-ui
 ```
 
-## Usage
+## 使用
 
 ```python
 from script_launcher_ui import ScriptLauncherUI
 
 def on_submit():
-    print("Configuration submitted")
+    print("配置已提交")
 
 ui = ScriptLauncherUI(style='light')
-ui.add_label('Welcome to Script Launcher')
-ui.add_text_input_module('script_path', 'Script Path', 'Enter script path')
-ui.add_button("Submit", on_submit)
+ui.add_label('欢迎使用脚本启动器')
+ui.add_text_input_module('script_path', '脚本路径', '请输入脚本路径')
+ui.add_button("提交", on_submit)
 ui.start()
 ```
 
-## Features
+## 功能
 
-- Simple and intuitive UI
-- Customizable styles
-- Configuration saving and loading
-- Easy integration with existing scripts
+- 简单直观的UI界面
+- 可自定义样式
+- 配置保存与加载
+- 易于与现有脚本集成
 
-## License
+## 许可证
 
 MIT

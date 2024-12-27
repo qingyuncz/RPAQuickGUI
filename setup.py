@@ -4,7 +4,7 @@ setup(
     name='script_launcher_ui',
     version='0.1.0',
     description='A simple script launcher UI for configuration selection',
-    long_description=open('README.md').read(),
+    long_description=open('README.md').read() + '\n\n' + open('README.en.md').read(),
     long_description_content_type='text/markdown',
     author='Your Name',
     author_email='your.email@example.com',
